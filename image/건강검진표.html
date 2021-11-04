@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+*{padding:0; margin:0;}
+
+#결과보기{margin-left:1000px;}
+ul, li{ list-style: none;}
+h2{color: #583604;}
+h3{color:#385723;}
+p{color:#385723;font-weight:bold;}
+a{text-decoration: none;}
+section{margin-left:500px;margin-top:30px;}
+p1{color:#956e01;}
+/*해더 시작*/
+.logo{float: left;
+       height: 80px;
+       margin-top: 15px; 
+       margin-left: 30px;}
+
+.header li{float: right;
+       list-style:none;
+      display: inline-block;
+       margin-left: 10px;
+       margin-right: 10px;
+       margin-top: 25px; 
+}
+
+.header li > a{ color: white;}
+.검진결과{margin-left:300px;}
+
+header{ border-bottom: 1px solid #548235;
+           height: 70px;
+           background-color: #548235;
+ }
+
+header > div{width: 90%;
+                  min-width: 1000px;
+                  max-wigth: 1200px;
+                  margin: 0 auto;}
+
+#idx-top{ width: 100%; 
+             height: 250px; 
+             background: url(image/ooo.png) no-repeat 50% 50% /cover;text-align:right;padding:90px 0;}
+              #idx-top strong{color:white;font-size:70px;margin:100px;}
+
+/*해더 끝*/
+
+/*네비 시작*/
+nav{ border-bottom: 1px solid #a9d18e;
+           height: 70px;
+           background-color: #a9d18e;
+          font-size: 35px;    
+}
+.nav li{ display: inline-block;
+        list-style:none;
+         margin-left: 220px;
+         margin-top: 10px;}
+.nav li > a{ color: white;
+               font-family: Mapo꽃섬;}
+/*네비 끝*/
+
+/*푸터 시작*/
+footer{ width: 100%;
+          height: 130px;
+          min-width: 1000px;
+          max-wigth: 1200px;
+          margin: 0 auto;
+          border: soild 1px #548235;
+          background-color: #548235;}
+
+.log{float: left;
+       height: 60px;
+       margin-top: 25px; 
+       margin-left: 300px;}
+          
+.p{color: white;
+   font-size: 15px;
+   float: right;
+   margin-top: 32px;
+   margin-right: 250px;}
+/*푸터 끝*/
+
+</style>
+</head>
+
+<body>
+<!--해더 시작-->
+<div id='wrap'>
+<header>
+<div> 
+  <h1 class='logo'>
+     <img src='image/logo white.png' width='100'>
+  </h1>
+
+   <ul class='header li'>
+      <li><a href='링크'>고객센터</a></li>
+      <li><a href='링크'>회원가입</a></li>
+      <li><a href='링크'>로그인</a></li>
+      <li><a href='헬스푸드 대문.html'>홈</a></li>
+   </ul>
+</div>
+</header>
+
+<div id='container'>
+    <div id='idx-top'><strong>건강진단</strong>
+</div>
+</div>
+<!--해더 끝-->
+
+<!--네비 시작-->
+<nav>
+  <ul class='nav li'>
+      <li><a href='링크'>회사소개</a></li>
+      <li><a href='링크'>상품</a></li>
+      <li><a href='링크'>레시피</a></li>
+      <li><a href='링크'>건강진단</a></li>
+   </ul>
+</nav>
+<!--네비 끝-->
+
+
+
+<section>
+
+<p1><h2>건강검진표</h2> <br><br>
+
+<p>이 검사는 소비자들의 건강상태를 보다 구체적으로 확인하여 그에 맞는 상품을 추천해 드리기 위해 실시되는 검사입니다. 각 항목에 해당하는 사항에 체크표시를 해주십시오.</p><br><br><hr><br>
+
+키 <input type='text'>cm  몸무게 <input type='text'>kg  <br><br>
+
+<form>1. 과거 병력: &nbsp; <input type='radio'name='info'>무  <input type='radio'name='info'>유('유'에 체크 시)>(<input type='radio'>뇌졸증 <input type='radio'> 심장병<input type='radio'> 고혈압<input type='radio'> 당뇨병 <input type='radio' >이상지질혈증 <input type='radio'>폐결핵 <input type='radio'>기타(암포함)) <br><br></form>
+
+
+<form>2. 약물: &nbsp;   <input type='radio'name='info'>무  <input type='radio'name='info'>유('유'에 체크 시)>(<input type='radio'>뇌졸증 <input type='radio'>심장병 <input type='radio'>고혈압 <input type='radio'> 당뇨병    <input type='radio'> 이상지질혈증 <input type='radio'> 폐결핵 <input type='radio'>기타(암포함)) <br><br></form>
+
+
+<form>3. 가족력:&nbsp;   <input type='radio'name='info'>무 <input type='radio'name='info'>유('유'에 체크 시)> (<input type='radio'>뇌졸증 <input type='radio'>심장병 <input type='radio'>고혈압 <input type='radio'> 당뇨병 <input type='radio'>기타(암포함)) <br><br></form>
+
+<hr><br>
+<h3>생활습관 흡연 음주</h3> <br>
+
+
+<form>B형 간염 바이러스 보유자 입니까? <br>
+<input type='radio'name='info'> 예<input type='radio'name='info'> 아니오<input type='radio'name='info'> 모름   <br></form><br>
+
+<h3>흡연 및 전자담배</h3> <br>
+
+<form>1. 지금까지 평생 총 5갑(100개비) 이상의 일반담배를 피운 적이 있습니까? <br>
+<input type='radio'name='info'>아니오
+<input type='radio'name='info'>예 </form><br>
+
+<h3>음주</h3> <br>
+<form>1. 술을 마시는 횟수는 어느 정도 입니까? <br>
+
+ <input type='radio'name='info'>일주일에 <input type='text'>번 <input type='radio'name='info'> 한 달에  <input type='text'>번  <input type='radio'name='info'>1년에 <input type='text'>번   <input type='radio'name='info'> 술을 마시지 않는다. <br></form><br>
+<hr><br>
+
+<h3>운동평가</h3><br><form>
+
+1. 평소 1주일간, 숨이 많이 차게 만드는 고감도 신체활동을 며칠 하십니까? 주당 <select><option>안함</option>일 
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                            <option>6</option>
+                                                                            <option>7</option></form>
+              
+  <h5> *고강도 신체활동의 예 달리기,에어로빅,건설현장노동,계단으로 물건 나르기 등  </h5>   <br></select>  <br> <br><br>
+
+2. 평소 하루에 숨이 많이 차게 만드는 고강도 신체활동을 몇 시간 하십니까?  <br> <br><form>
+
+<input type='radio'name='info'>30분 이하
+<input type='radio'name='info'>1시간 이하
+<input type='radio'name='info'>1시간 반~2시간
+<input type='radio'name='info'>3시간~4시간
+<input type='radio'name='info'>5시간 이상
+    <br><br></form>
+
+<hr><br>
+
+<h3>노인기능평가(66세,70세80세)</h3> <br><form>
+1. 음식을 차려주면 남의 도움 없이 혼자서 식사하십니까?   <br>
+<input type='radio'name='info'>예 <input type='radio'name='info'>아니오   <br><br></form>
+
+<form>2. 옷을 챙겨 입을 때 남의 도움 없이 혼자 하십니까? <br>
+<input type='radio'name='info'>예 <input type='radio'name='info'>아니오  <br><br></form>
+
+<form>3. 지난 6개월간 넘어진 적이 있습니까? <br>
+<input type='radio'name='info'>예 <input type='radio'name='info'>아니오<br><br></form>
+
+<hr><br></form>
+
+
+<h3>영양생활습관 평가도구</h3><br><form>
+
+1.우유나 칼슘두유 기타 유제품을 매일 한컵 200ml이상 마신다. <br>
+ <input type='radio'name='info'>항상그런편이다 <input type='radio'name='info'>보통이다 <input type='radio'name='info'>아닌편이다 <br><br></form>
+
+<form>2.육류,생선,달걀 ,콩,두부 등으로 된 음식을 매일 3회이상 먹는다.  <br>
+<input type='radio'name='info'>항상그런편이다<input type='radio'name='info'>보통이다 <input type='radio'name='info'>아닌편이다 <br><br></form>
+
+<form>3.김치 이외의 채소를 식사할 때마다 먹는다. <br>
+<input type='radio'name='info'>항상그런편이다 <input type='radio'name='info'>보통이다 <input type='radio'name='info'>아닌편이다 <br><br></form>
+<form>4.튀김이나 볶음 요리를 얼마나 자주 먹습니까? <br>
+<input type='radio'name='info'>항상그런편이다 <input type='radio'name='info'>보통이다 <input type='radio'name='info'>아닌편이다 <br><br></form>
+
+<form>5.곡류(밥,빵류),고기,생선,달걀,콩류,채소류,과일류,우유류 등 5종류 식품중에서 하루에 보통 몇 종류의 식품을 드십니까? <br>
+<input type='radio'name='info'>항상그런편이다 <input type='radio'name='info'>보통이다 <input type='radio'>아닌편이다 <br><br></span></p1>
+</form>
+<div id='결과보기'>
+
+<a href='검진결과.html'><img src='결과보기.jpg' width='150'></a>
+</div><br><br><br><br>
+</section>
+
+<!--푸터 시작-->
+<footer>
+  <h1 class='log'>
+     <img src='image/logo white.png' width='200'>
+  </h1>
+
+<p class='p'>충청남도 천안시 동남구 신안동 호서대길 12 사업자등록번호 111-22-33333 TEL 041-1111-2222<br><br>
+                  CopyrightⒸ   2020 Health Food</p>   
+</footer>
+<!--푸터 끝-->
+</body>
+</html>
