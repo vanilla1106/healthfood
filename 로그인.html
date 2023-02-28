@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+
+/* 기본 틀 만들기*/
+* {margin: 0; padding: 0;}
+
+header{ background-color: #548235;
+           width: 100%; height: 70px;
+           margin: 0 auto;}
+#main-img{width: 100%; height: 200px;}
+#nav{ background-color: #a9d18e;
+        width: 100%; height: 55px;
+        marigin: 0 auto;}
+contents{margin: 0 auto;
+            width: 80%}
+section{ }
+#main-contents{ background-color: white; margin-top: 50px;
+           width: 80%; height: 800px;
+           margin: 0 auto;}
+footer{ background-color: #548235;
+           width: 100%; height: 130px;}
+.clear{ clear: both;}
+a{text-decoration: none;}
+
+/* 헤더 스타일 시트*/
+#logo { float: left;
+           width: 1%;
+           margin-top: 2px;
+           margin-left: 20px;}
+li{ list-style:-type: none;}
+#top-menu li{float: right; list-style:none; display: inline-block;  color: white;
+        margin-left: 10px;  margin-right: 10px;  margin-top: 25px;}
+#top-menu li > a{ color: white;}
+#main-menu{ font-size: 30px; font-weight: bold; color: white;
+                   }
+#main-menu li{ list-style-type: none;
+                     display: inline;
+                     margin-top: 10px; margin: 120px; font-family: Mapo꽃섬; }
+#main-menu li > a{ color: white; }
+.c{ color: white; font-size: 60px; float: right;
+    margin-right: 150px; margin-top: 60px; font-family: Mapo꽃섬;}
+
+
+/* 메인이미지 스타일 시트*/
+#main-img{ background: url(image/ooo.png) no-repeat 50% 50% /cover;
+                background-repeat: no-repeat; 
+                background-position: center;
+                width: 100%
+                height: 281px;}
+
+/* 콘텐츠 스타일 시트*/
+li{ list-style-type: none;}
+#main-contents{ width: 80%; margin-top: 30px; border: solid 1px white;}
+#main-contents { font-size:22px;}
+
+.log1{margin-left: 580px;
+       margin-top: 110px;
+       float: left;}
+
+.log4{ float: right;
+        margin-top: 50px;
+        margin-right: 59px;}
+
+.t{ border: solid 1px #7c7c7c;
+   width: 240px;
+   height: 30px;
+font-size: 20px;}
+
+.log2{ border-left: solid 8px #7c7c7c;
+        float: right;
+        width: 500px;
+        margin-top: 80px;
+        margin-right:350px;
+        margin-bottom: 100px;
+        padding-left: 100px;
+        font-size: 30px;
+        
+        }
+
+#log3{margin-top:500px;margin-left:130px;}
+
+.r{ margin-top:48px;}
+
+span{   font-family: Mapo금빛나루;
+   color: #583604;}
+
+/* 푸터 스타일 시트*/
+.p{color: white;
+   font-size: 15px;
+   float: right;
+   margin-top: 32px;
+   margin-right: 250px;}
+
+.log{float: left;
+       height: 60px;
+       margin-top: 25px; 
+       margin-left: 300px;}
+</style>
+</head>
+
+<body>
+<header>
+<div id='logo'>
+    <img src='image/logo white 1.png'>
+</div>
+
+
+<ul id='top-menu'>
+      <li><a href='장바구니.html'>장바구니</a></li>
+      <li><a href='회원가입.html'>회원가입</a></li>
+      <li><a href='로그인.html'>로그인</a></li>
+      <li><a href='index.html'>홈</a></li>
+</ul>
+</header>
+
+<section id='main-img'>
+<p class='c'>로그인</p>
+</section>
+
+<nav>
+<center>
+<nav id='nav'>
+<div id='main-menu'>
+<ul id='main-menu li'>
+      <li><a href='회사소개.html'>회사소개</a></li>
+      <li><a href='상품.html'>상품</a></li>
+      <li><a href='레시피.html'>레시피</a></li>
+      <li><a href='검사시작.html'>건강진단</a></li>
+</ul>
+</div>
+</center>
+</nav>
+
+<section id='contents'>
+<div id='main-contents'>
+<section>
+<img src='image/로그인 원.png' width='280' class='log1'>
+</section>
+
+<aside class='log2'>
+<a href='index.html'><img src='image/로그인확인.png' width='130' class='log4' "float=right; padding-bottom: 30px; margin-right: 50px;"></a>
+<span>ID :&nbsp </span><input type='text' class='t' "font-size: 40px;"width: 800px; height: 45px;><br><br>
+<span>PW : </span><input type='password' class='t' "font-size: 40px;"width: 800px; height: 45px;><br>
+<img src='image/아이디찾기.png' class='r' width='200'>&nbsp<img src='image/비밀번호찾기.png' class='r' width='200' "margin-top: 100px;">
+
+</aside>
+
+<section>
+<div id ='log3'>
+<center>
+<a href='회원가입.html'><img src='image/회원가입하러가기.png' width='600'></a>
+</section>
+</center>
+</div>
+</section>
+<div class='clear'></div>
+
+<footer>
+<h1 class='log'>
+     <img src='image/logo white 1.png' width='200'>
+</h1>
+<p class='p'>충청남도 천안시 동남구 신안동 호서대길 12 사업자등록번호 111-22-33333 TEL 041-1111-2222<br><br>
+                  CopyrightⒸ   2020 Health Food</p>   
+</footer>
+</body>
+</html>

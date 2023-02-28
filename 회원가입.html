@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+
+/* 기본 틀 만들기*/
+* {margin: 0; padding: 0;}
+
+header{ background-color: #548235;
+           width: 100%; height: 70px;
+           margin: 0 auto;}
+#main-img{width: 100%; height: 200px;}
+#nav{ background-color: #a9d18e;
+        width: 100%; height: 55px;
+        marigin: 0 auto;}
+contents{margin: 0 auto;
+            width: 80%}
+section{ height: 645px;}
+#main-contents{ background-color: white; margin-top: 50px;
+           width: 80%; height: 420px;
+           margin: 0 auto;}
+footer{ background-color: #548235;
+           width: 100%; height: 130px;}
+.clear{ clear: both;}
+a{text-decoration: none;}
+
+/* 헤더 스타일 시트*/
+#logo { float: left;
+           width: 1%;
+           margin-top: 2px;
+           margin-left: 20px;}
+li{ list-style:-type: none;}
+#top-menu li{float: right; list-style:none; display: inline-block;  color: white;
+        margin-left: 10px;  margin-right: 10px;  margin-top: 25px;}
+#top-menu li > a{ color: white;}
+#main-menu{ font-size: 30px; font-weight: bold; color: white;
+                   }
+#main-menu li{ list-style-type: none;
+                     display: inline;
+                     margin-top: 10px; margin: 120px; font-family: Mapo꽃섬; }
+#main-menu li > a{ color: white; }
+.c{ color: white; font-size: 60px; float: right;
+    margin-right: 150px; margin-top: 60px; font-family: Mapo꽃섬;}
+
+
+/* 메인이미지 스타일 시트*/
+#main-img{ background: url(image/ooo.png) no-repeat 50% 50% /cover;
+                background-repeat: no-repeat; 
+                background-position: center;
+                width: 100%
+                height: 281px;}
+
+/* 콘텐츠 스타일 시트*/
+li{ list-style-type: none;}
+#main-contents{ width: 80%; height: 600px; margin: 0 auto; margin-top: 30px; border: solid 5px #385723;}
+#main-contents { font-size:22px;}
+
+#left{ float: left; text-align: left; }
+#right{ float: right; text-align: left; border-left: solid 5px #385723; width: 50%;}
+
+
+
+.on{color: #385723; font-family: Mapo금빛나루; margin-top: 20px; margin-left: 85px; 
+     font-size: 35px; text-style: bold;}
+
+.tw{font-style: bold; margin-left: 45px; font-size: 20px; margin-left: 85px;}
+
+.th1{color: #956e01; font-family: Mapo한아름; margin-left: 85px;
+      font-size: 20px;}
+.th2{color: #956e01; font-family: Mapo한아름; margin-left: 45px; margin-top: 30px;
+      font-size: 20px;}
+
+.fo{color: #583604; font-family: Mapo한아름; font-size: 13px; margin-left: 45px;}
+
+.red{color: red;}
+.blue{ color: blue;}
+
+
+
+/* 푸터 스타일 시트*/
+.p{color: white;
+   font-size: 15px;
+   float: right;
+   margin-top: 32px;
+   margin-right: 250px;}
+
+.log{float: left;
+       height: 60px;
+       margin-top: 25px; 
+       margin-left: 300px;}
+</style>
+</head>
+
+<body>
+<header>
+<div id='logo'>
+    <img src='image/logo white 1.png'>
+</div>
+
+
+<ul id='top-menu'>
+      <li><a href='장바구니.html'>장바구니</a></li>
+      <li><a href='회원가입.html'>회원가입</a></li>
+      <li><a href='로그인.html'>로그인</a></li>
+      <li><a href='index.html'>홈</a></li>
+</ul>
+</header>
+
+<section id='main-img'>
+<p class='c'>회원가입</p>
+</section>
+
+<nav>
+<center>
+<nav id='nav'>
+<div id='main-menu'>
+<ul id='main-menu li'>
+      <li><a href='회사소개.html'>회사소개</a></li>
+      <li><a href='상품.html'>상품</a></li>
+      <li><a href='레시피.html'>레시피</a></li>
+      <li><a href='건강진단.html'>건강진단</a></li>
+</ul>
+</div>
+</center>
+</nav>
+
+<section id='contents'>
+<div id='main-contents'>
+<section>
+<center>
+<aside>
+<div id='left'>
+<h3 class='on'>회원가입</h3><br>
+<form action='회원가입완료.html'>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script>
+      $( document ).ready( function() {
+        $( '.check-all' ).click( function() {
+          $( '.ab' ).prop( 'checked', this.checked );
+        } );
+      } );
+    </script>
+
+<h1 class='tw'><input type='checkbox'  name="all" class="check-all"><lable>헬스푸드 이용약관, 개인정보 수집 및
+       이용, <br>프로모션 정보 수신(선택)에
+       모두 동의합니다.</h1></lable><br>
+<h1 class='th1'><input type='checkbox' name="cb1" class="ab">헬스푸드 이용약관<span class='red'>(필수)</span></h1>
+<textarea style='margin-left: 85px; height: 80px; width: 450px;'>여러분을 환영합니다.
+헬스푸드 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 헬스푸드 서비스의 이용과 관련하여 헬스푸드 서비스를 제공하는 헬스푸트와 이를 이용하는 헬스푸드 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 헬스푸드 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.</textarea><br><br>
+
+<h1 class='th1'><input type='checkbox' name="cb2" class="ab">개인정보 수집 및 이용<span class='red'>(필수)</span></h1>
+<textarea style='margin-left: 85px; height: 80px; width: 450px;'>개인정보보호법에 따라 헬스푸드에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다. 서비스 이용 과정에서 이용자로부터 수집하는 개인정보는 아래와 같습니다.
+헬스푸드 내의 개별 서비스 이용, 이벤트 응모 및 경품 신청 과정에서 해당 서비스의 이용자에 한해 추가 개인정보 수집이 발생할 수 있습니다. 추가로 개인정보를 수집할 경우에는 해당 개인정보 수집 시점에서 이용자에게 ‘수집하는 개인정보 항목, 개인정보의 수집 및 이용목적, 개인정보의 보관기간’에 대해 안내 드리고 동의를 받습니다.</textarea><br><br>
+
+<h1 class='th1'><input type='checkbox' name="cb3" class="ab">프로모션 정보 수신<span class='blue'>(선택)</span></h1>
+<textarea style='margin-left: 85px; height: 80px; width: 450px;'>위치정보 이용약관에 동의하시면, 위치를 활용한 광고 정보 수신 등을 포함하는 헬스푸드 위치기반 서비스를 이용할 수 있습니다.
+
+
+제 1 조 (목적)
+이 약관은 헬스푸드 주식회사 (이하 “회사”)가 제공하는 위치정보사업 또는 위치기반서비스사업과 관련하여 회사와 개인위치정보주체와의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</textarea>
+
+</div>
+</aside>
+
+<aside>
+<center>
+<div id='right'>
+<h1 class='th2'>아이디</h1>
+<input type='text' style='margin-left: 45px;'><br>
+
+<h1 class='th2'>비밀번호</h1>
+<input type='text' style='margin-left: 45px;'><br>
+
+<h1 class='th2'>비밀번호 재확인</h1>
+<input type='text' style='margin-left: 45px;'><br>
+
+<h1 class='th2'>생년월일</h1><span class='fo'>
+<select style='margin-left: 1px;'><option>2000<option><option>2005<option><option>2010<option>></select>년<input type='text' style='width: 50px;'>월<input type='text' style='width: 50px;'>일
+</fo>
+
+<h1 class='th2'>성별</h1><input type='radio' style='margin-left: 45px; font-size: 30px;' name='info'> 남자 &nbsp &nbsp<input type='radio' name='info'> 여자<br>
+
+<h1 class='th2'>휴대전화</h1><select style='margin-left: 45px;'><option>010<option><option>041<option><input type='text' style='margin-left: 45px; width: 70px;'><input type='text' style='margin-left: 45px; width: 70px;'>
+<br>
+<center>
+<a href='회원가입완료.html' ><img src='image/가입.png' width='150' style="margin-top: 33px;"></a>
+</center>
+</div>
+</center>
+</aside>
+</div>
+</section>
+<div class='clear'></div>
+
+<footer>
+<h1 class='log'>
+     <img src='image/logo white 1.png' width='200'>
+</h1>
+<p class='p'>충청남도 천안시 동남구 신안동 호서대길 12 사업자등록번호 111-22-33333 TEL 041-1111-2222<br><br>
+                  CopyrightⒸ   2020 Health Food</p>   
+</footer>
+</body>
+</html>

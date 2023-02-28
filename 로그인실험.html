@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+*{padding:0; margin:0;}
+
+
+ul, li{ list-style: none;}
+
+a{text-decoration: none;}
+
+/*해더 시작*/
+.logo{float: left;
+       height: 80px;
+       margin-top: 15px; 
+       margin-left: 30px;}
+
+.header li{float: right;
+       list-style:none;
+      display: inline-block;
+       margin-left: 10px;
+       margin-right: 10px;
+       margin-top: 25px; 
+}
+
+.header li > a{ color: white;}
+
+header{ border-bottom: 1px solid #548235;
+           height: 70px;
+           background-color: #548235;
+ }
+
+header > div{width: 90%;
+                  min-width: 1000px;
+                  max-wigth: 1200px;
+                  margin: 0 auto;}
+
+#idx-top{ width: 100%; 
+             height: 250px; 
+             background: url(image/ooo.png) no-repeat 50% 50% /cover;}
+/*해더 끝*/
+
+/*네비 시작*/
+nav{ border-bottom: 1px solid #a9d18e;
+           height: 70px;
+           background-color: #a9d18e;
+          font-size: 35px;    
+}
+.nav li{ display: inline-block;
+        list-style:none;
+         margin-left: 220px;
+         margin-top: 10px;}
+.nav li > a{ color: white;
+               font-family: Mapo꽃섬;}
+/*네비 끝*/
+
+/*푸터 시작*/
+footer{ width: 100%;
+          height: 130px;
+          min-width: 1000px;
+          max-wigth: 1200px;
+          margin: 0 auto;
+          border: soild 1px #548235;
+          background-color: #548235;}
+
+.log{float: left;
+       height: 60px;
+       margin-top: 25px; 
+       margin-left: 300px;}
+          
+.p{color: white;
+   font-size: 15px;
+   float: right;
+   margin-top: 32px;
+   margin-right: 250px;}
+/*푸터 끝*/
+
+.log1{margin-left: 35px;
+       margin-top: 30px;}
+
+.log2{ border: solid 8px #7c7c7c;
+        margin-left: 66px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        }
+
+</style>
+</head>
+
+<body>
+<!--해더 시작-->
+<div id='wrap'>
+<header>
+<div> 
+  <h1 class='logo'>
+     <img src='image/logo white.png' width='100'>
+  </h1>
+
+   <ul class='header li'>
+      <li><a href='링크'>고객센터</a></li>
+      <li><a href='링크'>회원가입</a></li>
+      <li><a href='링크'>로그인</a></li>
+      <li><a href='헬스푸드 대문.html'>홈</a></li>
+   </ul>
+</div>
+</header>
+
+<div id='container'>
+    <div id='idx-top'></div>
+
+</div>
+</div>
+<!--해더 끝-->
+
+<!--네비 시작-->
+<nav>
+  <ul class='nav li'>
+      <li><a href='링크'>회사소개</a></li>
+      <li><a href='링크'>상품</a></li>
+      <li><a href='링크'>레시피</a></li>
+      <li><a href='링크'>건강진단</a></li>
+   </ul>
+</nav>
+<!--네비 끝-->
+
+<section>
+<img src='image/로그인 원.png' width='250' class='log1'>
+</section>
+
+<section class='log2'>
+ID :&nbsp <input type='text' class='t' style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:2px; width: 300px; height: 35px; margin-bottom: 7px;"><br>
+PW : <input type='text' style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:2px; width: 300px; height: 35px; margin-bottom: 7px;">
+</section>
+
+<section>
+<img src='image/회원가입하러가기.png' width='500' class='log3'>
+</section>
+
+
+<!--푸터 시작-->
+<footer>
+  <h1 class='log'>
+     <img src='image/logo white.png' width='200'>
+  </h1>
+
+<p class='p'>충청남도 천안시 동남구 신안동 호서대길 12 사업자등록번호 111-22-33333 TEL 041-1111-2222<br><br>
+                  CopyrightⒸ   2020 Health Food</p>   
+</footer>
+<!--푸터 끝-->
+</body>
+</html>

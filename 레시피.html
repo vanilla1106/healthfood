@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+
+/* 기본 틀 만들기*/
+* {margin: 0; padding: 0;}
+
+header{ background-color: #548235;
+           width: 100%; height: 70px;
+           margin: 0 auto;}
+#main-img{width: 100%; height: 200px;}
+#nav{ background-color: #a9d18e;
+        width: 100%; height: 55px;
+        marigin: 0 auto;}
+contents{margin: 0 auto;
+            width: 80%}
+section{ border-bottom: solid 1px #cccccc;}
+#main-contents{ background-color: white; margin-top: 50px;
+           width: 80%; height: 100%;
+           margin: 0 auto;}
+footer{ background-color: #548235;
+           width: 100%; height: 130px;}
+.clear{ clear: both;}
+a{text-decoration: none;}
+
+/* 헤더 스타일 시트*/
+#logo { float: left;
+           width: 1%;
+           margin-top: 2px;
+           margin-left: 20px;}
+li{ list-style:-type: none;}
+#top-menu li{float: right; list-style:none; display: inline-block;  color: white;
+        margin-left: 10px;  margin-right: 10px;  margin-top: 25px;}
+#top-menu li > a{ color: white;}
+#main-menu{ font-size: 30px; font-weight: bold; color: white;
+                   }
+#main-menu li{ list-style-type: none;
+                     display: inline;
+                     margin-top: 10px; margin:120px;; font-family: Mapo꽃섬; }
+#main-menu li > a{ color: white; }
+.c{ color: white; font-size: 60px; float: right;
+    margin-right: 150px; margin-top: 60px; font-family: Mapo꽃섬;}
+
+
+/* 메인이미지 스타일 시트*/
+#main-img{ background: url(image/ooo.png) no-repeat 50% 50% /cover;
+                background-repeat: no-repeat; 
+                background-position: center;
+                width: 100%
+                height: 281px;}
+
+/* 콘텐츠 스타일 시트*/
+li{ list-style-type: none;}
+#main-contents{ width: 80%; margin: 0 auto; margin-top: 30px; }
+#main-contents { font-size:22px;}
+
+
+/* 푸터 스타일 시트*/
+.p{color: white;
+   font-size: 15px;
+   float: right;
+   margin-top: 32px;
+   margin-right: 250px;}
+
+.log{float: left;
+       height: 60px;
+       margin-top: 25px; 
+       margin-left: 300px;}
+
+.clear{clear:both;}
+#total{margin-top:22px;margin-bottom:30px;}
+.picture li{list-style-type:none; float:left; margin-left:15px;margin-bottom:30px;}
+.menu{text-align:center;}
+.name{font-size:30px;font-weight:bold;font-family:'Mapo금빛나루';color:#583604;}
+.cost{font-size:25px;font-family:'Mapo금빛나루';color:#7c7c7c}
+.picture{border-bottom:dotted 1px #cdcdcd;height:420px;margin-top :20px;width:1680px;display:inline-block;}
+#google{margin-left:50px;margin-top:10px;text-align:center;}
+#center{text-align:center;}
+
+
+</style>
+</head>
+
+<body>
+<header>
+<div id='logo'>
+    <img src='image/logo white.png'>
+</div>
+
+
+<ul id='top-menu'>
+      <li><a href='장바구니.html'>장바구니</a></li>
+      <li><a href='회원가입.html'>회원가입</a></li>
+      <li><a href='로그인.html'>로그인</a></li>
+      <li><a href='index.html'>홈</a></li>
+</ul>
+</header>
+
+<section id='main-img'>
+<p class='c'>레시피</p>
+</section>
+
+<nav>
+<center>
+<nav id='nav'>
+<div id='main-menu'>
+<ul id='main-menu li'>
+      <li><a href='회사소개.html'>회사소개</a></li>
+      <li><a href='상품.html'>상품</a></li>
+      <li><a href='레시피.html'>레시피</a></li>
+      <li><a href='검사시작.html'>건강진단</a></li>
+</ul>
+</center>
+</div>
+
+<section id='contents'>
+<center>
+<div id='main-contents'>
+<div id='center'>
+<div id='rjator'>
+<form id='google'><input type='text' placeholder='레시피 검색하기' style= 'width: 400px; height: 50px; font-size: 20px;' class='input1'>
+<button style= 'width: 65px; height: 50px;'>검색</button></form></div>
+<div id='total'>
+<ul class='picture'>
+<li><div class='menu'><a href='레시피(연어스테이크).html'><img src='image/연어스테이크.png' width='400'height='300'></a><br><p class='name'>연어스테이크</p><br> <p class='cost'>\ 15,700</p></div></li>
+<li><div class='menu'><a href='레시피(생강차).html'><img src='image/생강차.png' width='400'height='300'></a><br><p class='name'>생강차</p><br> <p class='cost'>\ 3,500</p></div></li>
+<li><div class='menu'><a href='레시피(코다리조림).html'><img src='image/코다리조림.png' width='400'height='300'></a><br><p class='name'>코다리조림</p><br><p class='cost'> \ 14,000</p></div></li>
+<li><div class='menu'><a href='레시피(오미자차).html'><img src='image/오미자차.png' width='400'height='300'></a><br><p class='name'>오미자차</p><br><p class='cost'> \ 3,500</p></div></li>
+</ul></div>
+<div class='clear'></div>
+
+<ul class='picture'>
+<li><div class='menu'><a href='레시피(유자차).html'><img src='image/유자차.png' width='400'height='300'></a><br><p class='name'>유자차</p><br> <p class='cost'>\ 3,000</p></div></li>
+<li><div class='menu'><a href='레시피(버섯전골).html'><img src='image/버섯전골.png' width='400'height='300'></a><br><p class='name'>버섯전골</p><br> <p class='cost'>\ 12,500</p></div></li>
+<li><div class='menu'><a href='레시피(고등어조림).html'><img src='image/고등어조림.png' width='400'height='300'></a><br><p class='name'>고등어조림</p><br><p class='cost'> \ 8,000</p></div></li>
+<li><div class='menu'><a href='레시피(카레).html'><img src='image/카레.png' width='400'height='300'></a><br><p class='name'>카레</p><br><p class='cost'> \ 6,500</p></div></li>
+</ul>
+<div class='clear'></div>
+
+<ul class='picture'>
+<li><div class='menu'><a href='레시피(청국장).html'><img src='image/청국장.png' width='400'height='300'></a><br><p class='name'>청국장</p><br> <p class='cost'>\ 8,000</p></div></li>
+<li><div class='menu'><a href='레시피(메밀차).html'><img src='image/메밀차.png' width='400'height='300'></a><br><p class='name'>메밀차</p><br> <p class='cost'>\ 2,500</p></div></li>
+<li><div class='menu'><a href='레시피(아보카도샐러드).html'><img src='image/아보카도샐러드.png' width='400'height='300'></a><br><p class='name'>아보카도샐러드</p><br><p class='cost'> \ 10,500</p></div></li>
+<li><div class='menu'><a href='레시피(돼지감자차).html'><img src='image/돼지감자차.png' width='400'height='300'></a><br><p class='name'>돼지감자차</p><br><p class='cost'> \ 2,500</p></div></li>
+</ul>
+<div class='clear'></div>
+</div>
+</section>
+<div class='clear'></div>
+
+<footer>
+<h1 class='log'>
+     <img src='image/logo white.png' width='200'>
+</h1>
+<p class='p'>충청남도 천안시 동남구 신안동 호서대길 12 사업자등록번호 111-22-33333 TEL 041-1111-2222<br><br>
+                  CopyrightⒸ   2020 Health Food</p>   
+</footer>
+</body>
+</html>

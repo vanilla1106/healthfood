@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+
+/* 기본 틀 만들기*/
+* {margin: 0; padding: 0;}
+
+header{ background-color: #548235;
+           width: 100%; height: 70px;
+           margin: 0 auto;}
+#main-img{width: 100%; height: 200px;}
+#nav{ background-color: #a9d18e;
+        width: 100%; height: 55px;
+        marigin: 0 auto;}
+contents{margin: 0 auto;
+            width: 80%}
+section{ border-bottom: solid 1px #cccccc;}
+#main-contents{ background-color: white; margin-top: 50px;
+           width: 80%; height: 100%;
+           margin: 0 auto;}
+footer{ background-color: #548235;
+           width: 100%; height: 130px;}
+.clear{ clear: both;}
+a{text-decoration: none;}
+
+/* 헤더 스타일 시트*/
+#logo { float: left;
+           width: 1%;
+           margin-top: 2px;
+           margin-left: 20px;}
+li{ list-style:-type: none;}
+#top-menu li{float: right; list-style:none; display: inline-block;  color: white;
+        margin-left: 10px;  margin-right: 10px;  margin-top: 25px;}
+#top-menu li > a{ color: white;}
+#main-menu{ font-size: 30px; font-weight: bold; color: white;
+                   }
+#main-menu li{ list-style-type: none;
+                     display: inline;
+                     margin-top: 10px; margin:120px;; font-family: Mapo꽃섬; }
+#main-menu li > a{ color: white; }
+.c{ color: white; font-size: 60px; float: right;
+    margin-right: 150px; margin-top: 60px; font-family: Mapo꽃섬;}
+
+
+/* 메인이미지 스타일 시트*/
+#main-img{ background: url(image/ooo.png) no-repeat 50% 50% /cover;
+                background-repeat: no-repeat; 
+                background-position: center;
+                width: 100%
+                height: 281px;}
+
+/* 콘텐츠 스타일 시트*/
+li{ list-style-type: none;}
+#main-contents{ width: 80%; margin: 0 auto; margin-top: 30px; }
+#main-contents { font-size:22px;}
+
+
+/* 푸터 스타일 시트*/
+.p{color: white;
+   font-size: 15px;
+   float: right;
+   margin-top: 32px;
+   margin-right: 250px;}
+
+.log{float: left;
+       height: 60px;
+       margin-top: 25px; 
+       margin-left: 300px;}
+
+.clear{clear:both;}
+.picture li{list-style-type:none; float:left;margin-bottom:30px;margin-left:20px;}
+#big{float:left;margin-left:20px;width:400px;height:350px;}
+#food{float:left;}
+#choice {border:solid 1px #385723;width:300px;height:50px;font-size:22px;}
+#box p{font-size:30px;margin:10px;margin-bottom:100px;font-weight:bold;margin-top:20px;
+margin-left:25px;font-family:'Mapo금빛나루';color:#385723;}
+#box{border:solid 1px #385723;width:300px;height:210px;margin-top:20px;}
+#click{margin-top:20px;}
+#tn li{float:left;margin-right:35px;margin-left:25px;font-family:'Mapo금빛나루';color:#a9d18e;}
+
+h1 {padding:10px;font-size:30px;margin-top:10px;margin-bottom:10px;}
+#gysmd{text-align:center;border-top:solid 1px #cdcdcd ;width:930px;margin-top:20px;}
+h3{margin-top:10px;font-size:25px;text-align:left;font-family:'Mapo한아름';color:#956e01;}
+.name{text-align:center;font-size:20px;font-family:'Mapo한아름';color:#7c7c7c;}
+#ejqhrl{text-align:center;margin-top:205px;font-family:'Mapo한아름';}
+#line h1{font-family:'Mapo금빛나루';color:#583604;text-align:left;}
+#a{display:inline-block;}
+#good{display:inline-block;}
+</style>
+</head>
+
+<body>
+<header>
+<div id='logo'>
+    <img src='image/logo white.png'>
+</div>
+
+
+<ul id='top-menu'>
+      <li><a href='장바구니.html'>장바구니</a></li>
+      <li><a href='회원가입.html'>회원가입</a></li>
+      <li><a href='로그인.html'>로그인</a></li>
+      <li><a href='index.html'>홈</a></li>
+</ul>
+</header>
+
+<section id='main-img'>
+<p class='c'>상품</p>
+</section>
+
+<nav>
+<center>
+<nav id='nav'>
+<div id='main-menu'>
+<ul id='main-menu li'>
+      <li><a href='회사소개.html'>회사소개</a></li>
+      <li><a href='상품.html'>상품</a></li>
+      <li><a href='레시피.html'>레시피</a></li>
+      <li><a href='검사시작.html'>건강진단</a></li>
+</ul>
+</center>
+</div>
+
+<section id='contents'>
+<center>
+<div id='center'>
+<div id='a'>
+<div id='line'>
+<h1>생강차</h1>
+<div id='food'><img src='image/생강차.png'width='500px'height='350px'></div>
+<div id= 'big'>
+       <select id='choice'>
+          <option>------상품선택------</option>
+          <option>생강차</option>
+          
+         
+       </select>
+       <div class='clear'></div>
+       <div id='box'>
+       <p>[생강차]</p>
+      <ul id='tn'>
+     <li> <img src='image/수량.png' width='100px'></li>
+       <li><h4>  3,500원</h4> </li>
+       </ul>
+       </div> 
+       <div class='clear'></div>
+         <div id='click'>
+        <a href ='장바구니.html'><img src='image/장바구니.png'width='150px'></a>
+        <a href ='결제창.html'><img src='image/결제창.png'width='150px'></a>
+        </div>
+</div>
+</div>
+</div>
+<div>
+<div class='clear'></div>
+<div id='good'>
+<div id='gysmd'>
+<h3>생강은 이런 곳에 좋아요</h3>
+<ul class='picture'>
+<li><div class='menu'><img src='image/효능3.png' width='200'height='200'><br><h5 class='name'>동맥경화 예방</h5></div></li>
+<li><div class='menu'><img src='image/효능12.png' width='200'height='200'><br><h5 class='name'>천식증상 완화</h5></div></li>
+<li><div class='menu'><img src='image/효능7.png' width='200'height='200'><br><h5 class='name'>관절염 완화</h5></div></li>
+<li><div class='menu'><img src='image/효능4.png' width='200'height='200'><br><h5 class='name'>향균, 항암효과</h5></div></li>
+</ul>
+<div id='ejqhrl'>
+<a href ='효능(생강차).html'><p>더보기</p></a>
+<div class='clear'></div></div>
+</div>
+</div>
+</div>
+</center>
+</section>
+<div class='clear'></div>
+
+<footer>
+<h1 class='log'>
+     <img src='image/logo white.png' width='200'>
+</h1>
+<p class='p'>충청남도 천안시 동남구 신안동 호서대길 12 사업자등록번호 111-22-33333 TEL 041-1111-2222<br><br>
+                  CopyrightⒸ   2020 Health Food</p>   
+</footer>
+</body>
+</html>

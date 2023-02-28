@@ -10,6 +10,7 @@
 header{ background-color: #548235;
            width: 100%; height: 70px;
            margin: 0 auto;}
+#main-img{width: 100%; height: 350px;}
 #nav{ background-color: #a9d18e;
         width: 100%; height: 55px;
         marigin: 0 auto;}
@@ -41,14 +42,18 @@ li{ list-style:-type: none;}
 #main-menu li > a{ color: white; }
 
 
-.main-img{width: 100%; height: 200px;
-          background-image: url(image/ooo\ 1.png);
-          background-repeat: repeat-x;
-          background-position: center;}
+/* 메인이미지 스타일 시트*/
+#main-img{ background: url(image/배너움직.gif) no-repeat 50% 50% /cover;
+                background-repeat: no-repeat; 
+                background-position: center;
+                width: 100%;
+                height: 481px;}
+
+
 
 /* 콘텐츠 스타일 시트*/
 li{ list-style-type: none;}
-#main-contents{ width: 80%; margin: 0 auto; margin-top: 40px; border: soild 1px red;}
+#main-contents{ width: 80%; margin: 0 auto; margin-top: 12px; border: soild 1px red;}
 #main-contents { font-size:22px;
                            padding-bottom: 8px;
                            border-bottom: solid 1px white}
@@ -58,7 +63,7 @@ li{ list-style-type: none;}
 .list-wrap .sec li{margin: 20px;
    width: 20%;
    display: inline-block;
-   margin-top: 60px;}
+   margin-top: 50px;}
 
 .h11{
       margin-top: 30px;
@@ -151,25 +156,27 @@ li{ list-style-type: none;}
 
 
 <ul id='top-menu'>
-      <li><a href=''>장바구니</a></li>
-      <li><a href=''>회원가입</a></li>
-      <li><a href=''>로그인</a></li>
-      <li><a href=''>홈</a></li>
+      <li><a href='장바구니.html'>장바구니</a></li>
+      <li><a href='회원가입.html'>회원가입</a></li>
+      <li><a href='로그인.html'>로그인</a></li>
+      <li><a href='index.html'>홈</a></li>
 </ul>
 </header>
 
-<div class='main-img'>
-</div>
+<section id='main-img'>
+
+
+</section>
 
 <nav>
 <center>
 <nav id='nav'>
 <div id='main-menu'>
 <ul id='main-menu li'>
-      <li><a href=''>회사소개</a></li>
-      <li><a href=''>상품</a></li>
-      <li><a href=''>레시피</a></li>
-      <li><a href=''>건강진단</a></li>
+      <li><a href='회사소개.html'>회사소개</a></li>
+      <li><a href='상품.html'>상품</a></li>
+      <li><a href='레시피.html'>레시피</a></li>
+      <li><a href='검사시작.html'>건강진단</a></li>
 </ul>
 </div>
 </center>
@@ -185,28 +192,28 @@ li{ list-style-type: none;}
 </center>
 <center>
        <li>
-          <a href=''><img src='image/연어스테이크.png' width='250'></a>
+          <a href='상품(연어스테이크).html'><img src='image/연어스테이크.png' width='250'></a>
           <center><h1 class='h22'>연어 스테이크</h1></center>
           <center><p class='h33'>₩15,700</p></center>
             
       </li>
 
        <li>
-          <a href=''><img src='image/생강차.png' width='250'></a>
+          <a href='상품(생강차).html'><img src='image/생강차.png' width='250'></a>
           <center><h1 class='h22-3'>생강차</h1></center>
           <center><p class='h33-1'>₩3,500</p></center>
             
       </li>
 
        <li>
-          <a href=''><img src='image/코다리조림.png' width='250'></a>
+          <a href='상품(코다리조림).html'><img src='image/코다리조림.png' width='250'></a>
           <center><h1 class='h22-5'>코다리조림</h1></center>
           <center><p class='h33'>₩14,000</p></center>
             
       </li>
 
        <li>
-          <a href=''><img src='image/오미자차.png' width='250'></a>
+          <a href='상품(오미자차).html'><img src='image/오미자차.png' width='250'></a>
           <center><h1 class='h22-4'>오미자차</h1></center>
           <center><p class='h33-1'>₩3,500</p></center>
             
@@ -224,27 +231,27 @@ li{ list-style-type: none;}
 </center>
 <center>
        <li>
-          <a href=''><img src='image/버섯전골.png' width='250'></a>
+          <a href='상품(버섯전골).html'><img src='image/버섯전골.png' width='250'></a>
           <center><h1 class='h22-4'>버섯전골</h1></center>
           <center><p class='h33'>₩12,500</p></center>
             
       </li>
 
        <li>
-          <a href=''><img src='image/카레.png' width='250'></a>
+          <a href='상품(카레).html'><img src='image/카레.png' width='250'></a>
           <center><h1 class='h22-2'>카레</h1></center>
           <center><p class='h33-1'>₩6,500</p></center>
             
       </li>
 
        <li>
-          <a href=''><img src='image/유자차.png' width='250'></a>
+          <a href='상품(유자차).html'><img src='image/유자차.png' width='250'></a>
           <center><h1 class='h22-3'>유자차</h1></center>
           <center><p class='h33-1'>₩3,000</p></center>
       </li>
 
        <li>
-          <a href=''><img src='image/고등어조림.png' width='250'></a>
+          <a href='상품(고등어조림).html'><img src='image/고등어조림.png' width='250'></a>
           <center><h1 class='h22-5'>고등어조림</h1></center>
           <center><p class='h33-1'>₩8,000</p></center>
            
@@ -292,7 +299,7 @@ li{ list-style-type: none;}
 <h1 class='log'>
      <img src='image/logo white 1.png' width='200'>
 </h1>
-<p class='p'>충청남도 천안시 동남구 12 사업자등록번호 111-22-33333 TEL 041-1111-2222<br><br>
+<p class='p'>충청남도 천안시 동남구 신안동 호서대길 12 사업자등록번호 111-22-33333 TEL 041-1111-2222<br><br>
                   CopyrightⒸ   2020 Health Food</p>   
 </footer>
 </body>

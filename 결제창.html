@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+
+/* 기본 틀 만들기*/
+* {margin: 0; padding: 0;}
+hr{margin-right:1000px;}
+ul, li{ list-style: none;}
+h2{color: #583604;font-family:Mapo한아름;}
+h3{color:#385723;font-family:Mapo한아름;}
+p{color:#385723;font-weight:bold;font-family:Mapo한아름;}
+a{text-decoration: none;}
+p1{color:#956e01;}
+.yellow{background-color:  #a9d18e}
+th{text-align:left;}
+#연어{margin-top:40px;font-family:Mapo한아름;}
+#결제버튼{margin:50px;margin-left:450px;font-family:Mapo한아름;}
+#결제배너{margin:130px;margin-left:90px;}
+#배송정보{font-weight:bold;font-size:40px;}
+#상품정보{font-weight:bold;font-size:40px;font-family:Mapo한아름;}
+#결제{font-weight:bold;font-size:40px;font-family:Mapo한아름;}
+#동의{font-weight:bold;font-size:40px;font-family:Mapo한아름;}
+table,tr,th,td{border:solid 1px balck;border-collapse:collapse;padding:8px;font-family:Mapo한아름;}
+#title{list-style-type:none; padding:10px; border-bottom:dotted 1px  #7c7c7cfont-family:Mapo한아름;}
+span3{color:red;}
+header{ background-color: #548235;
+           width: 100%; height: 70px;
+           margin: 0 auto;}
+#main-img{width: 100%; height: 200px;}
+#nav{ background-color: #a9d18e;
+        width: 100%; height: 55px;
+        marigin: 0 auto;}
+contents{margin: 0 auto;
+            width: 80%}
+section{ border-bottom: solid 1px #cccccc;}
+#main-contents{ background-color: white; margin-top: 50px;
+           width: 80%; height:100%;
+           margin: 0 auto;}
+footer{ background-color: #548235;
+           width: 100%; height: 130px;}
+.clear{ clear: both;}
+a{text-decoration: none;}
+
+/* 헤더 스타일 시트*/
+#logo { float: left;
+           width: 1%;
+           margin-top: 2px;
+           margin-left: 20px;}
+li{ list-style:-type: none;}
+#top-menu li{float: right; list-style:none; display: inline-block;  color: white;
+        margin-left: 10px;  margin-right: 10px;  margin-top: 25px;}
+#top-menu li > a{ color: white;}
+#main-menu{ font-size: 30px; font-weight: bold; color: white;
+                   }
+#main-menu li{ list-style-type: none;
+                     display: inline;
+                     margin-top: 10px; margin-left: 235px; font-family: Mapo꽃섬; }
+#main-menu li > a{ color: white; }
+.c{ color: white; font-size: 60px; float: right;
+    margin-right: 150px; margin-top: 60px; font-family: Mapo꽃섬;}
+
+
+/* 메인이미지 스타일 시트*/
+#main-img{ background: url(image/ooo.png) no-repeat 50% 50% /cover;
+                background-repeat: no-repeat; 
+                background-position: center;
+                width: 100%
+                height: 281px;}
+
+/* 콘텐츠 스타일 시트*/
+li{ list-style-type: none;}
+#main-contents{ width: 70%; margin-left:850px;; margin-top: 30px; border: solid 1px whtie;}
+#main-contents { font-size:22px;}
+
+
+/* 푸터 스타일 시트*/
+.p{color: white;
+   font-size: 15px;
+   float: right;
+   margin-top: 32px;
+   margin-right: 250px;}
+
+.log{float: left;
+       height: 60px;
+       margin-top: 25px; 
+       margin-left: 300px;}
+</style>
+</head>
+
+<body>
+<header>
+<div id='logo'>
+    <img src='image/logo white.png'>
+</div>
+
+
+<ul id='top-menu'>
+      <li><a href='장바구니.html'>장바구니</a></li>
+      <li><a href='회원가입.html'>회원가입</a></li>
+      <li><a href='로그인.html'>로그인</a></li>
+      <li><a href='index.html'>홈</a></li>
+</ul>
+</header>
+
+<section id='main-img'>
+<p class='c'>결제</p>
+</section>
+
+<nav><center>
+<nav id='nav'>
+<div id='main-menu'>
+<ul id='main-menu li'>
+      <li><a href='회사소개.html'>회사소개</a></li>
+      <li><a href='상품.html'>상품</a></li>
+      <li><a href='레시피.html'>레시피</a></li>
+      <li><a href='검사시작.html'>건강진단</a></li>
+</ul></center>
+</div>
+
+<section id='contents'>
+<div id='main-contents'>
+<section>
+<div id='결제배너'>
+<img src='결제배너.png'>
+
+
+</div>
+<h2>배송정보</h2>
+<hr>
+<table>
+  <tr id='title'>
+  <td class='yellow' <th>주문자</th> </td>
+   <td colspan='4'></td>
+     
+   <td><input type="text" id="maskedReceiveName" class="inpt_default "  value="" maxlength="20"><br></td></td>
+  </tr>
+  </tr>
+  <tr id='title'>
+   <td class='yellow' <th>연락처</th></td>
+    <td colspan='4'></td>
+    <td> <input type="text" id="maskedReceiveName" class="inpt_default "  value="" maxlength="20"> <span class="input_txt">-</span>
+                    <span class="input_area  gwnan">
+                    
+                        <input type="password" name="mobile2" id="mobile2" class="inpt_default "  value="" maxlength="4" onpaste="return false;" onkeyup="orderUtil.setNumber(this)"> <span class="checkbox_area">
+                       
+                    </span>
+                    
+                    
+                    </span>
+                    <span class="input_txt">-</span>
+                    <span class="input_area phone2">
+                        <input type="text" name="mobile3" id="mobile3" class="inpt_default "  value="" maxlength="4" onpaste="return false;" onkeyup="orderUtil.setNumber(this)">
+                    </span><span class="checkbox_area">
+
+                        <input type="checkbox" class="blind" name="safetyUseYn" id="safetyUseYn" onClick="ordDlv.safetyMsgDisplay(this)" check>
+                        <label for="safetyUseYn" class="chk_box"><span class="ico"></span>안심번호 사용</label>
+                    </span>
+                    <br></td></td>
+  </tr>
+
+  <tr id='title'>
+  <td class='yellow' <th>수령자</th> </td>
+   <td colspan='4'></td>
+     
+   <td><input type="text" id="maskedReceiveName" class="inpt_default "  value="" maxlength="20"> <input type="checkbox" class="blind" name="baseAddrRegYn" id="baseAddrRegYn">
+                                <label for="baseAddrRegYn" class="chk_box"><span class="ico"></span>주문자와 동일인</label>
+                            </span></td> <br></td></td>
+  </tr>
+
+
+
+
+
+  <tr id='title'>
+   <td class='yellow' <th>배송지 입력</th></td>
+   <td colspan='4'></td>
+    <td><input type="text" id="maskedReceiveName" class="inpt_default "  value="" maxlength="20">  <input type='radio'name='info'>기존 배송지 <input type='radio'name='info'>새 주소 등록<br><input type="text" id="maskedReceiveName" class="inpt_default "  value="상세정보 입력" maxlength="30"> <span class="checkbox_area">
+                                <input type="checkbox" class="blind" name="baseAddrRegYn" id="baseAddrRegYn">
+                                <label for="baseAddrRegYn" class="chk_box"><span class="ico"></span>기본배송지로 저장</label>
+                            </span>
+  </tr>
+  <tr id='title'>
+    <td class='yellow'<th>배송시 요청사항</th></td>
+    <td colspan='4'></td>
+  <td><select>
+                 <option>배송시 요청사항 선택</option>
+                 <option>부재시 경비실에 맡겨주세요</option>
+                 <option>부재시 핸드폰으로 연락바랍니다.</option>
+                 <option>집앞에 놓아주세요.</option>
+                  </form></select><br>
+  </tr> 
+</table>
+<hr><br>
+
+<h2>주문상품정보</h2>
+<hr>
+
+<table>
+    
+ <tr id='title'>
+  </tr>
+  <br>
+   
+    <img src='image/연어스테이크.png' width='150'height='150'>
+
+<div id='연어'>
+연어스테이크(15,700원)<br>
+(+배송비:2500원)
+</div><br>
+ <hr>
+
+
+   
+    </td>
+  </tr>
+</table>
+
+
+
+<h2>포인트</h2>
+<hr>
+<br>
+
+health food point<td>  <input type="text" id="maskedReceiveName" class="inpt_default "  value="0원" maxlength="10">  <button type='submit'>잔액조회</button></form>
+<br><br>
+
+
+<br>
+<h2>결제 수단 선택</h2><hr><br>
+<tr id='title'>
+<img src='신용카드.png'width='90'><img src='무통장입금.png'width='90'><img src='휴대폰결제.png' width='90'><img src='기타결제.png' width='89'><br>
+
+
+<th>카드 선택</th> </td>
+   <td colspan='4'></td>
+    <td <form>
+                                                     <select> <option>---선택---</option>
+                                                             <option>비자카드</option>
+                                                              <option> 현대카드</option>
+                                                                <option>신한카드</option>
+                                                                <option>우리카드</option>
+                                                                <option>카카오뱅크</option>
+                                                                <option>삼성카드</option>
+                                                                 </select> </tr><br>
+<th>할부</th>
+<tr id='title'>
+<td colspan='4'></td>
+<td <form>
+<select> 
+                           <option>---선택---</option>
+                           <option>1개월</option>
+                           <option>6개월</option>
+                           <option>12개월</option>
+                          <option>24개월</option></form>
+ 
+    </select> <br><br>
+ <span class="checkbox_area">
+                        <input type="checkbox" class="blind" name="safetyUseYn" id="safetyUseYn" onClick="ordDlv.safetyMsgDisplay(this)" check>
+                        <label for="safetyUseYn" class="chk_box"><span class="ico"></span>주문 및 결제대행 서비스 이용약관 동의<span3>(필수)</span3></label>
+                    </span><br>
+<span class="checkbox_area">
+                        <input type="checkbox" class="blind" name="safetyUseYn" id="safetyUseYn" onClick="ordDlv.safetyMsgDisplay(this)" check>
+                        <label for="safetyUseYn" class="chk_box"><span class="ico"></span>개인정보 약관 동의<span3>(필수)</span3></label>
+                    </span>
+<br><br><br><hr>
+<div id='결제버튼'>
+<form action='장바구니.html'><a href='결제완료.html'><img src='결제하기버튼.png' width='200'></a> </div><br>
+
+ 
+</section>
+</div>
+</section>
+<div class='clear'></div>
+
+<footer>
+<h1 class='log'>
+     <img src='image/logo white.png' width='200'>
+</h1>
+<p class='p'>충청남도 천안시 동남구 신안동 호서대길 12 사업자등록번호 111-22-33333 TEL 041-1111-2222<br><br>
+                  CopyrightⒸ   2020 Health Food</p>   
+</footer>
+</body>
+</html>
